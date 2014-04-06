@@ -1,0 +1,61 @@
+Character IO
+
+Write a program that asks a user for an input file name, and also a vowel. The program reads text from the 
+input file specified by the user. For each line it displays how many times the vowel appears on that line. 
+It also displays the thtal number of times the vowel appears in the file when all the data is read.
+
+This program should define a function called 'readInput' that has two parameters. The first parameter is an 
+input-file stream and the second parameter is of type character. This function reads from the input-file 
+stream, and displays the number of times the second parameter (the requested vowel) appears on each line. It
+also displays the total number of times the second parameter appears in the file.
+
+The main function prompts for and reads in the input file name and a vowel. It opens the file, and then calls
+'readInput' with the input-file stream and the vowel as its arguments.
+
+Include a loop in the program that lets the user repeat the above process for as many times as she/he wishes
+to do so.
+
+Now modify the program so that it writes the output both on the screen and also into a file named 'lab9O.txt'
+
+Input-file text:
+This is lab9A
+Hello from line number two
+This is not the last line
+
+There is no more data!
+
+
+Sample Input and Output:
+
+Programmer: Anna Wendt
+Course:		COSC 246, Winter 2014
+Lab#:		9
+Due Date:	4-3-14
+
+Enter an input file name: lab9A.txt
+Enter a vowel:			  E
+
+Number of E (or e) on each line:
+1- 0
+2- 3
+3- 2
+4- 0
+5- 3
+
+Total number of E (or e): 8
+
+Do it again? Y or y (for yes), and N or n (for no): Y
+
+Enter an input file name: lab9A.txt
+Enter a vowel: a
+
+Number of A (or a) on each line:
+1- 2
+2- 0
+3- 1
+4- 0
+5- 2
+
+Total number of A (or a): 5
+
+Do it again? Y or y (for yes), and N or n (for no): N
