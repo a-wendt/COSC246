@@ -18,7 +18,7 @@
 using namespace std;
 
 // declaring function
-void readInput(istream&, char);
+void readInput(ifstream& fin, char);
 
 int main()
 {
@@ -56,7 +56,7 @@ int main()
 	return 0;
 }
 
-void readInput(istream& file_name = cin, char user_vowel)
+void readInput(ifstream& file_name, char user_vowel)
 {
 	// declaring variables
 	int count = 0, vowel_per_line_count = 0, line_count = 0;
